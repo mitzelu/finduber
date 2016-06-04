@@ -9,7 +9,7 @@ class Result(db.Model):
     url = db.Column(db.String())
     category = db.Column(db.String())
 
-    def __init__(self, url, result_all, result_no_stop_words):
+    def __init__(self, url, category):
         self.url = url
         self.category = category
 
